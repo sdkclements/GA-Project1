@@ -73,6 +73,21 @@ main{
 	background-color: yellow;
 	
 }
+.disk[data-weight='5'] {
+	width: 160px;
+	background-color: purple;
+	
+}
+.disk[data-weight='6'] {
+	width: 170px;
+	background-color: orange;
+	
+}
+.disk[data-weight='7'] {
+	width: 180px;
+	background-color: black;
+	
+}
 
 .activeDisk {
 	background-color: red;
