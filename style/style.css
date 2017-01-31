@@ -9,11 +9,12 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: #658FBB;
 }
 header {}
 main{
 	width: 85%;
-	background-color: #9888BB
+	
 
 }
 .maincontainer{
@@ -29,11 +30,53 @@ main{
 }
 
 .pole {
+	display:flex;
+	flex-direction: column-reverse;
+	justify-content: flex-start;
+	align-items: center;
 	width:40%;
 	height: 400px;
-	background-color: grey;
+	background-image: url(../pole.png);
 	text-align: center;
+	border: 2px;
+	border-style: dashed;
+}
+.pole:hover {
+	border-style: solid;
+	border-color: red;
 }
 .disk {
+	width: 50px;
+	height: 25px;
+	background-color: yellow;
+	border: 3px;
+	border-style: solid;
+	border-radius: 3px;
+
+}
+.disk[data-weight='1'] {
+	width: 60px;
+	background-color: red;
+}
+.disk[data-weight='2'] {
+	width: 90px;
+	background-color: blue;
+	
+}
+.disk[data-weight='3'] {
+	width: 120px;
+	background-color: green;
+	
+}
+.disk[data-weight='4'] {
+	width: 150px;
+	background-color: yellow;
+	
+}
+
+.activeDisk {
+	background-color: red;
+	align-self: flex-end;
+
 
 }
