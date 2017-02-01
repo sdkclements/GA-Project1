@@ -1,5 +1,6 @@
 //--------------------------------
 $(document).ready(function() {
+    var active = 0
     var posts = {
         source: [],
         aux: [],
@@ -39,19 +40,29 @@ $(document).ready(function() {
         createNumDisks(num)
     })
 
-    $('.pole').click(function() {
+    $('.pole').click(function(e) {
+        var value = $(this).val();
+        if (value) {
+            this.push(0)
+            if ($(this).children().last().data().weight < $('.activeDisk').data().weight) {
+                e.preventDefault()
+                alert("that cant go there")
+            }
+
+        }
+
         //console.log($(this).children().length)
         //define a variable that will return 0 if the div is empty and 
         //else it will return the num of the first object in the array
         //then remove class active.
         var polEl = $(this).children().length
         console.log(polEl)
-        var distLength = $(this).children().length 
-        var lastinRow = $(this).children().last() 
-        //var weightTop = $(this).children().last().data().weight
-        //var active = $('.activeDisk').data().weight
+        var distLength = $(this).children().length
+        var lastinRow = $(this).children().last()
+            //var weightTop = $(this).children().last().data()[1]
+        var active = $('.activeDisk').data().weight
 
-        if ($('.disk').hasClass('activeDisk'))  {
+        if ($('.disk').hasClass('activeDisk')) {
             var mover = $('.activeDisk')
             mover.appendTo(this)
 
