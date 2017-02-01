@@ -7,6 +7,7 @@ $(document).ready(function() {
 
     }
 
+
     class Disk {
         constructor(weight, post, position) {
             this.weight = weight;
@@ -43,11 +44,11 @@ $(document).ready(function() {
         //define a variable that will return 0 if the div is empty and 
         //else it will return the num of the first object in the array
         //then remove class active.
-        var distLength = $(this).children().length;
-        var lastinRow = $(this).children().last()
+        var distLength = $(this).children().length 
+        var lastinRow = $(this).children().last() 
         var weightTop = $(this).children().last().data().weight
         var active = $('.activeDisk').data().weight
-        console.log(active)
+
         if ($('.disk').hasClass('activeDisk')) {
             var mover = $('.activeDisk')
             mover.appendTo(this)
