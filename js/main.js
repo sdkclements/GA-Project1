@@ -44,18 +44,23 @@ $(document).ready(function() {
         //define a variable that will return 0 if the div is empty and 
         //else it will return the num of the first object in the array
         //then remove class active.
+        var polEl = $(this).children().length
+        console.log(polEl)
         var distLength = $(this).children().length 
         var lastinRow = $(this).children().last() 
-        var weightTop = $(this).children().last().data().weight
-        var active = $('.activeDisk').data().weight
+        //var weightTop = $(this).children().last().data().weight
+        //var active = $('.activeDisk').data().weight
 
-        if ($('.disk').hasClass('activeDisk')) {
+        if ($('.disk').hasClass('activeDisk'))  {
             var mover = $('.activeDisk')
             mover.appendTo(this)
 
 
         }
         //mover.removeClass('activeDisk')
+        // var $dvElement = $('#dvElement');
+        //if (!$dvElement.length)  // OR !$.isEmptyObject($dvElement)
+
     })
 
 });
