@@ -59,6 +59,9 @@ main{
 	border-radius: 3px;
 
 }
+.invisdisk{
+	display: none;
+}
 .disk[data-weight='1'] {
 	width: 60px;
 	background-color: red;
