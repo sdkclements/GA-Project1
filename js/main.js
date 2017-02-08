@@ -1,4 +1,9 @@
 //--------------------------------
+// As of yet unresolved issues:
+// Still want to add drag functionality.
+// Still need to set the input number to a variable i can reference in regards to score.
+// Still need to set up a winning situation.
+// 
 $(document).ready(function() {
     var posts = {
         source: [],

@@ -3,6 +3,11 @@
 ---------------------------
 Game Rules and Info:
 
+As of yet unresolved issues:
+Still want to add drag functionality.
+Still need to set the input number to a variable i can reference in regards to score.
+Still need to set up a winning situation.
+
 The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:
 
 Only one disk can be moved at a time.
@@ -20,6 +25,3 @@ User Story Four: As a user I should be able to select where I want a disk to go.
 User Story Five: Something should alert me when the game is over
 
 
-As of yet unresolved issues:
-Still want to add drag functionality.
-Still need to set the input number to a variable i can reference in regards to score.
